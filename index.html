@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>認知症・もの忘れについて | 佐々木ハートクリニック</title>
+<!-- SEO対策: 地域名、専門性、最新エビデンスを網羅したタイトル -->
+<title>静岡市の認知症・もの忘れ外来｜血管から脳を守る佐々木ハートクリニック</title>
+<meta name="description" content="静岡市のかかりつけ医として、循環器専門医が血管の健康から認知症予防・診療にアプローチします。無料のもの忘れ健診協力医療機関。最新の視線検出検査ミレボ（Mirevo）導入。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
@@ -54,14 +56,16 @@
     margin-bottom: 0px;
   }
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 16px;
     letter-spacing: 0.05em;
+    line-height: 1.4;
   }
   .hero p {
     font-size: 1.1rem;
     opacity: 0.9;
     margin: 0;
+    line-height: 1.6;
   }
 
   /* --- Image Styles --- */
@@ -77,10 +81,16 @@
     display: inline-block;
   }
 
-  /* --- 特定の画像の個別サイズ設定 --- */
-  /* ミレボ画像のPC時（デフォルト）設定 */
+  /* --- 特定の画像の個別サイズ設定 (PC/デフォルト) --- */
+  /* ミレボ画像: PC時は525pxを維持 */
   .img-mirevo {
-    max-width: 525px; /* PC時は1.5倍の525px */
+    width: 100%;
+    max-width: 525px !important;
+  }
+  
+  /* Lancet画像: PC時は70%に制限 */
+  .img-lancet {
+    max-width: 70% !important;
   }
 
   /* --- Section Styles --- */
@@ -141,16 +151,6 @@
     font-size: 14px;
     font-weight: bold;
   }
-  .checklist-box li:last-child {
-    margin-bottom: 0;
-  }
-  .checklist-footer {
-    margin-top: 24px;
-    padding-top: 20px;
-    border-top: 1px dashed #f5c298;
-    font-weight: bold;
-    color: var(--text-main);
-  }
 
   /* --- Banner (Shizuoka City) --- */
   .banner {
@@ -159,20 +159,7 @@
     border-radius: var(--radius);
     padding: 24px;
     margin: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-  }
-  .banner h3 {
-    color: var(--navy);
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-  }
-  .banner p {
-    margin-bottom: 20px;
-    text-align: left;
-    width: 100%;
   }
   .btn {
     display: inline-block;
@@ -182,46 +169,7 @@
     padding: 12px 32px;
     border-radius: 30px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 12px rgba(45, 111, 168, 0.3);
-  }
-  .btn:hover {
-    background-color: var(--navy);
-    transform: translateY(-2px);
-  }
-
-  /* --- Step Cards (SCI/MCI/Dementia) --- */
-  .steps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 24px;
-  }
-  .step-card {
-    background: #fff;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    padding: 24px;
-    box-shadow: var(--shadow);
-    position: relative;
-    transition: transform 0.3s ease;
-  }
-  .step-card:hover {
-    transform: translateY(-4px);
-  }
-  .step-card h4 {
-    color: var(--blue);
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-    border-bottom: 1px solid var(--blue-pale);
-    padding-bottom: 8px;
-  }
-  .highlight-text {
-    color: var(--teal);
-    font-weight: bold;
-    background: var(--teal-light);
-    padding: 2px 6px;
-    border-radius: 4px;
   }
 
   /* --- Flow Section --- */
@@ -263,85 +211,24 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-family: 'Noto Serif JP', serif;
     border: 4px solid #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  .flow-step-number span {
-    font-size: 0.7rem;
-    line-height: 1;
-  }
-  .flow-step-number strong {
-    font-size: 1.4rem;
-    line-height: 1;
-  }
-  .flow-step h4 {
-    color: var(--navy);
-    font-size: 1.3rem;
-    margin-bottom: 16px;
-  }
-  .flow-list {
-    margin: 0;
-    padding-left: 20px;
-  }
-  .flow-list li {
-    margin-bottom: 12px;
-  }
-  .flow-list strong {
-    color: var(--blue-mid);
-  }
-
-  /* --- Doctor's Message --- */
-  .message-box {
-    background-color: var(--bg-gray);
-    border-left: 6px solid var(--navy);
-    padding: 32px;
-    border-radius: 0 var(--radius) var(--radius) 0;
-    margin-top: 40px;
-  }
-  .message-box h3 {
-    color: var(--navy);
-    font-size: 1.4rem;
-    margin-bottom: 16px;
-  }
-  .doctor-signature {
-    text-align: right;
-    margin-top: 24px;
-    font-weight: bold;
-    color: var(--navy);
   }
 
   /* --- Mobile Adjustments (レスポンシブ設定) --- */
   @media (max-width: 600px) {
-    .hero {
-      padding: 40px 16px;
-    }
-    .hero h1 {
-      font-size: 1.6rem;
-    }
-    .flow-wrapper::before {
-      left: 15px;
-    }
-    .flow-step {
-      padding: 60px 20px 20px 20px;
-      margin-left: 0;
-    }
-    .flow-step-number {
-      left: 20px;
-      top: -20px;
-      width: 50px;
-      height: 50px;
-    }
-    .flow-step-number span {
-      font-size: 0.6rem;
-    }
-    .flow-step-number strong {
-      font-size: 1.2rem;
-    }
+    .hero h1 { font-size: 1.5rem; }
+    .hero p { font-size: 1rem; }
+    .flow-wrapper::before { left: 15px; }
+    .flow-step { padding: 60px 20px 20px 20px; }
+    .flow-step-number { left: 20px; top: -20px; width: 50px; height: 50px; }
 
-    /* 【スマホ時】ミレボ画像を300pxに制限 */
+    /* 【スマホ時】ミレボ画像を300pxに上書き */
     .img-mirevo {
       max-width: 300px !important;
+    }
+    /* 【スマホ時】Lancet画像は画面幅いっぱい(100%)まで許可 */
+    .img-lancet {
+      max-width: 100% !important;
     }
   }
 </style>
@@ -349,16 +236,18 @@
 <body>
 
   <div class="hero">
-    <h1>認知症・もの忘れについて</h1>
-    <p>血管の健康からアプローチする、新しい認知症ケア</p>
+    <h1>認知症は予防・遅延できる時代へ</h1>
+    <p>静岡市の認知症サポート医による、<br class="pc-only">血管の健康から脳を守る包括的アプローチ</p>
   </div>
 
   <div class="container" style="padding-top: 30px;">
     
+    <!-- メインビジュアル -->
     <div class="image-wrapper" style="margin-top: 0;">
-      <img src="1a_mainvisual.jpg" alt="認知症・もの忘れについて メインビジュアル" class="content-image" style="width: 100%;">
+      <img src="1a_mainvisual.jpg" alt="静岡市の認知症・もの忘れ外来 佐々木ハートクリニック" class="content-image" style="width: 100%;">
     </div>
 
+    <!-- 症状チェック -->
     <section class="section">
       <h2 class="section-title">こんな症状・お悩みはありませんか？</h2>
       <div class="checklist-box">
@@ -369,48 +258,74 @@
           <li>以前楽しんでいた趣味に興味を示さなくなった、外出がおっくうになった</li>
           <li>家族の様子が少しおかしい気がするが、どう受診を勧めたらいいか分からない</li>
         </ul>
-        <div class="checklist-footer">
-          上記のような症状、「ただの年のせいだから」と諦めたり、見過ごしたりしていませんか？<br>
-          実は、もの忘れや認知症のサインは、<span style="color: var(--orange);">「血管の健康」</span>と深く関わっています。
-        </div>
       </div>
     </section>
 
+    <!-- 静岡市もの忘れ健診 -->
+    <section class="banner">
+      <h3>静岡市の「もの忘れ健診」協力医療機関です</h3>
+      <p>65歳以上の静岡市民の方は、年1回無料で簡単なチェックを受けられます。</p>
+      <a href="https://www.city.shizuoka.lg.jp/s4523/s013083.html" target="_blank" class="btn">詳細はこちら</a>
+    </section>
+
+    <!-- 予防のエビデンス部分 -->
+    <section class="section">
+        <h2 class="section-title">認知症は「予防・遅延」できる時代へ</h2>
+        <p>世界的な医学誌Lancet（ランセット）の2024年の最新報告では、認知症のリスク因子のうち<strong>約45%は、生活習慣の改善や適切な治療によって予防・遅延が可能</strong>とされています。</p>
+        <div class="image-wrapper">
+            <img src="3a_lancet 2024.jpg" alt="Lancet 2024 認知症のリスク因子" class="content-image img-lancet">
+        </div>
+        <p>心臓や血管の専門医である当院は、「血管のプロ」として、動脈硬化の管理を通じた脳の健康維持に取り組んでいます。</p>
+    </section>
+
+    <!-- 当院での検査・受診の流れ -->
     <section class="section">
       <h2 class="section-title">当院での検査・受診の流れ</h2>
-      <p>「認知症の検査」と聞くと、ご本人もご家族も不安を感じられるかもしれません。当院では、患者様のお気持ちに寄り添い、なるべく心理的負担の少ない形で現在の状態を把握し、適切な方針をご提案します。</p>
-
       <div class="flow-wrapper">
         <div class="flow-step">
-          <div class="flow-step-number"><span>STEP</span><strong>1</strong></div>
+          <div class="flow-step-number"><strong>1</strong></div>
           <h4>問診・ご相談</h4>
           <p>まずはご本人やご家族から、日頃の様子やご不安に思っていることをじっくりと伺います。</p>
         </div>
 
         <div class="flow-step">
-          <div class="flow-step-number"><span>STEP</span><strong>2</strong></div>
+          <div class="flow-step-number"><strong>2</strong></div>
           <h4>各種検査（認知機能検査など）</h4>
-          <p>現在の状態を客観的に評価するため、以下の検査を組み合わせて行います。</p>
-          <ul class="flow-list">
-            <li><strong>標準的な認知機能検査</strong><br>改訂長谷川式簡易知能評価スケール（HDS-R）や、ミニメンタルステート検査（MMSE）を実施します。</li>
-            <li style="margin-top: 16px;"><strong>負担の少ない新しい検査（ミレボ）</strong><br>iPadの画面を数分間眺めるだけの視線検出検査「ミレボ」にも対応しております。
-              
-              <div class="image-wrapper" style="margin: 16px 0; text-align: left;">
-                <img src="3_mirevo.jpg" alt="負担の少ない視線検出検査 ミレボ" class="content-image img-mirevo">
-              </div>
-            </li>
-            <li><strong>その他の検査</strong><br>生活習慣病の評価のための簡便な血液検査などを実施します。</li>
-          </ul>
+          <p>標準的な検査に加え、最新の心理的負担の少ない検査も選択可能です。</p>
+          <div style="margin-top: 20px; background: var(--blue-pale); padding: 20px; border-radius: var(--radius);">
+            <strong>最新の視線検出検査（ミレボ / Mirevo）</strong><br>
+            iPadの画面を数分間眺めるだけの、新しい検査方法です。クイズ形式ではないため、心理的負担が極めて少ないのが特徴です。
+            <div class="image-wrapper" style="text-align: left; margin: 16px 0;">
+              <img src="3_mirevo.jpg" alt="負担の少ない認知機能検査 ミレボ" class="content-image img-mirevo">
+            </div>
+          </div>
         </div>
 
         <div class="flow-step">
-          <div class="flow-step-number"><span>STEP</span><strong>3</strong></div>
-          <h4>結果のご説明と今後の方針決定</h4>
-          </div>
+          <div class="flow-step-number"><strong>3</strong></div>
+          <h4>結果説明と地域連携サポート</h4>
+          <p>検査結果を詳しくご説明し、生活習慣の改善提案や専門医療機関への橋渡し、地域包括ケアとの連携まで包括的にサポートします。</p>
+        </div>
       </div>
     </section>
 
+    <!-- クロージング画像 -->
+    <div class="image-wrapper">
+      <img src="4_closing.jpg" alt="地域全体で支える包括的サポート" class="content-image" style="width: 100%;">
     </div>
+
+    <!-- 医師としての想い -->
+    <section class="section message-box">
+      <h3>医師としての想い</h3>
+      <p>「認知症になりたくない」という切実なお気持ちに、私たちは循環器専門医としての知見と、最新のエビデンスでお応えします。血管の健康を守ることは、将来の穏やかな生活を守ることそのものです。</p>
+      <div class="doctor-signature">
+        佐々木ハートクリニック 院長<br>
+        佐々木 玲聡<br>
+        <span style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">（認知症サポート医・循環器内科専門医・総合内科専門医）</span>
+      </div>
+    </section>
+
+  </div>
 
 </body>
 </html>
