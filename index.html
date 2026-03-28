@@ -333,6 +333,24 @@
       font-size: 1.2rem;
     }
   }
+  /* --- ミレボ画像用カスタム --- */
+  .mirevo-wrapper {
+    margin: 16px 0;
+    text-align: left;
+  }
+  .mirevo-img {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    /* ミレボ画像 スマホ用調整 */
+    .mirevo-wrapper {
+      text-align: center !important;
+      margin-left: -20px;
+      width: calc(100% + 20px);
+    }
+  }
 </style>
 </head>
 <body>
@@ -435,10 +453,10 @@
           <p>現在の状態を客観的に評価するため, 以下の検査を組み合わせて行います。</p>
           <ul class="flow-list">
             <li><strong>標準的な認知機能検査</strong><br>改訂長谷川式簡易知能評価スケール（HDS-R）や, ミニメンタルステート検査（MMSE）を実施し, 認知機能を評価します。</li>
-            <li style="margin-top: 16px;"><strong>負担の少ない新しい検査（ミレボ）</strong><br>「クイズ形式のテストは間違えたら恥ずかしい」といった心理的な抵抗がある方のために, iPadの画面を数分間眺めるだけの視線検出検査「ミレボ」にも対応しております。心理的負担がなく, 客観的な数値で現状を把握できます。
+           <li style="margin-top: 16px;"><strong>負担の少ない新しい検査（ミレボ）</strong><br>「クイズ形式のテストは間違えたら恥ずかしい」といった心理的な抵抗がある方のために, iPadの画面を数分間眺めるだけの視線検出検査「ミレボ」にも対応しております。心理的負担がなく, 客観的な数値で現状を把握できます。
               
-              <div class="image-wrapper" style="margin: 16px 0; text-align: left;">
-                <img src="3_mirevo.jpg" alt="負担の少ない視線検出検査 ミレボ" class="content-image" style="max-width: 700px;">
+              <div class="image-wrapper mirevo-wrapper">
+                <img src="3_mirevo.jpg" alt="負担の少ない視線検出検査 ミレボ" class="content-image mirevo-img">
               </div>
             </li>
             <li><strong>その他の検査</strong><br>生活習慣病の評価のための簡便な血液検査（微量採血）などを実施し, 総合的に判断します。</li>
