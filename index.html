@@ -68,6 +68,10 @@
     line-height: 1.6;
   }
 
+  .pc-only {
+    display: block;
+  }
+
   /* --- Image Styles --- */
   .image-wrapper {
     text-align: center;
@@ -82,13 +86,11 @@
   }
 
   /* --- 特定の画像の個別サイズ設定 (PC/デフォルト) --- */
-  /* ミレボ画像: PC時は525pxを維持 */
   .img-mirevo {
     width: 100%;
     max-width: 525px !important;
   }
   
-  /* Lancet画像: PC時は70%に制限 */
   .img-lancet {
     max-width: 70% !important;
   }
@@ -218,15 +220,14 @@
   @media (max-width: 600px) {
     .hero h1 { font-size: 1.8rem; }
     .hero p { font-size: 1rem; }
+    .pc-only { display: none; }
     .flow-wrapper::before { left: 15px; }
     .flow-step { padding: 60px 20px 20px 20px; }
     .flow-step-number { left: 20px; top: -20px; width: 50px; height: 50px; }
 
-    /* 【スマホ時】ミレボ画像を300pxに上書き */
     .img-mirevo {
       max-width: 300px !important;
     }
-    /* 【スマホ時】Lancet画像は画面幅いっぱい(100%)まで許可 */
     .img-lancet {
       max-width: 100% !important;
     }
@@ -237,7 +238,7 @@
 
   <div class="hero">
     <h1>認知症・もの忘れについて</h1>
-    <p>静岡市の認知症サポート医による、<br class="pc-only">血管の健康から脳を守る包括的アプローチ<br>（認知症は予防・病状を延伸できる時代へ）</p>
+    <p>静岡市の認知症サポート医による、<br class="pc-only">血管の健康から脳を守る包括的アプローチ</p>
   </div>
 
   <div class="container" style="padding-top: 30px;">
